@@ -23,7 +23,6 @@ public class User {
 
 
     public User() {
-
     }
 
     public boolean equals(final Object o) {
