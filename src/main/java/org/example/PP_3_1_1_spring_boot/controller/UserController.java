@@ -1,17 +1,16 @@
 package org.example.PP_3_1_1_spring_boot.controller;
 
-import org.example.PP_3_1_1_spring_boot.Service.UserService;
+import org.example.PP_3_1_1_spring_boot.Service.UserServiceImpl;
 import org.example.PP_3_1_1_spring_boot.model.User;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class UserController {
-    private final UserService userService;
+    private final UserServiceImpl userService;
 
-    public UserController(UserService userService) {
+    public UserController(UserServiceImpl userService) {
         this.userService = userService;
     }
 
